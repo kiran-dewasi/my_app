@@ -1,4 +1,15 @@
-import { StrictMode } from 'react';
+// src/pages/Home.tsx
+
+'use client';
+
+import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Card, CardContent } from '@/components/ui/card';
+
+// ⬇ Paste your full Home() component here, exactly as you already have it ⬇
+export default function Home() {import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App.tsx';
@@ -8,11 +19,6 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </StrictMode>
 );
-import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent } from '@/components/ui/card';
 
 export default function Home() {
   useEffect(() => {
@@ -219,4 +225,7 @@ export default function Home() {
       </motion.footer>
     </div>
   );
+}
+
+  // ... your full code from above
 }
