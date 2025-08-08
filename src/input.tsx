@@ -1,11 +1,10 @@
-import React from "react";
+import * as React from "react";
 
-export const Input = ({ className = "", ...props }) => {
+export function Input(props: React.InputHTMLAttributes<HTMLInputElement>) {
   return (
     <input
-      type="text"
-      className={`px-4 py-2 border rounded-md ${className}`}
+      className="border px-3 py-2 rounded w-full"
       {...props}
     />
   );
-};
+}

@@ -10,9 +10,9 @@ createRoot(document.getElementById('root')!).render(
 );
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent } from '@/components/ui/card';
+import { Button } from './button';
+import { Input } from './input';
+import { Card, CardContent } from './card';
 
 export default function Home() {
   useEffect(() => {
