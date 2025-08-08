@@ -1,10 +1,8 @@
-import * as React from "react";
+// src/components/ui/input.tsx
+import React from "react";
 
-export function Input(props: React.InputHTMLAttributes<HTMLInputElement>) {
-  return (
-    <input
-      className="border px-3 py-2 rounded w-full"
-      {...props}
-    />
-  );
-}
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
+
+export const Input: React.FC<InputProps> = (props) => {
+  return <input {...props} />;
+};

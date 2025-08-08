@@ -9,7 +9,7 @@ export default function Home()
 
 {
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: React.ChangeEvent<HTMLInputElement>) => {
       const bg = document.getElementById('space-bg');
       if (bg) {
         const { clientX: x, clientY: y } = e;

@@ -16,7 +16,7 @@ import { Card, CardContent } from './card';
 
 export default function Home() {
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: React.ChangeEvent<HTMLInputElement>) => {
       const bg = document.getElementById('space-bg');
       const x = (e.clientX / window.innerWidth - 0.5) * 20;
       const y = (e.clientY / window.innerHeight - 0.5) * 20;
