@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { useEffect } from 'react';
+
 import { Button } from './button';
 import { Input } from './input';
 import { Card, CardContent } from './card';
@@ -9,7 +9,7 @@ export default function Home()
 
 {
   useEffect(() => {
-    const handleMouseMove = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleMouseMove = (e:MouseEvent) => {
       const bg = document.getElementById('space-bg');
       if (bg) {
         const { clientX: x, clientY: y } = e;
