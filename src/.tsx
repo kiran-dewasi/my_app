@@ -2,9 +2,9 @@
 
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Button } from './button';
-import { Input } from './input';
-import { Card, CardContent } from './card';
+import { Button } from './components/ui/button';
+import { Input } from './components/ui/input';
+import { Card, CardContent } from './components/ui/card';
 
 export default function Home() {
   useEffect(() => {
